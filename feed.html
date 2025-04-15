@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="feed.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <h1>Alumni Portal</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Dashboard Content -->
+  <main>
+    <!-- Search Filter Section -->
+    <section class="search-filter">
+      <h2>Search Achievements</h2>
+      <form id="searchForm">
+        <select id="achievementFilter">
+          <option value="">Select Achievement</option>
+          <option value="Job">Job</option>
+          <option value="Graduation">Graduation</option>
+          <option value="Award">Award</option>
+          <option value="Project">Project</option>
+        </select>
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <!-- Create Post Section -->
+    <section class="create-post">
+      <h2>Create a Post</h2>
+      <form id="postForm">
+        <textarea id="postText" placeholder="Share your achievement..." required></textarea>
+        <input type="file" id="postImage" accept="image/*">
+        <button type="submit" class="new-post-btn">Post</button>
+      </form>
+    </section>
+
+    <!-- Feed Section -->
+    <section class="feed">
+      <h2>Recent Posts</h2>
+      <div id="postFeed"></div>
+    </section>
+  </main>
+
+  <script src="feed.js"></script>
+</body>
+</html>

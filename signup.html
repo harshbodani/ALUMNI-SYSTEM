@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Page</title>
+  <link rel="stylesheet" href="start.css"> <!-- External CSS File -->
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <h1>Alumni Portal</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Registration Form Section -->
+  <main>
+    <section class="registration-container">
+      <h2>Create an Account</h2>
+      <form id="registrationForm">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <input type="password" id="password" placeholder="Password" required>
+        
+        <!-- Role dropdown -->
+        <label for="role">Select Role:</label>
+        <select id="role" required>
+          <option value="Student">Student</option>
+          <option value="Alumni">Alumni</option>
+        </select>
+      
+        <!-- Expertise input field -->
+        <input type="text" id="expertise" placeholder="Expertise (e.g. Subject or Field)" required>
+      
+        <button type="button" onclick="registerUser()">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Alumni Portal. All rights reserved.</p>
+    <p>this just a basic idea of the project</p>
+        <p>the actual project is way bigger and complex every informations is in the word file in this folder</p>
+  </footer>
+
+  <script src="signup.js"></script> <!-- External JS File -->
+</body>
+</html>

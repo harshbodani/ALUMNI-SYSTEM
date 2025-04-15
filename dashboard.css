@@ -1,0 +1,96 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f3f4f6;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h1 {
+    margin: 20px 0;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.option {
+    background: linear-gradient(135deg, #ffffff, #f7f9fc);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 220px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.option:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.option img {
+    width: 90px;
+    margin-bottom: 15px;
+}
+
+.option h2 {
+    font-size: 18px;
+    color: #34495e;
+    margin: 10px 0 15px;
+}
+
+#searchBar {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #dfe4ea;
+    font-size: 14px;
+}
+
+button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+.slideshow {
+    margin: 40px auto;
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.slideshow img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+}
